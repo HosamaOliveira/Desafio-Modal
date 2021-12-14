@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./icon5.png">
+  <title>Desafio Modal</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+    * {margin: 0; padding: 0;}
+
+    body {
+      background-color: rgb(4, 49, 23);
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      text-align: center;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    #divPai {
+      display: grid;
+      place-items: center;
+      width: 80%;
+      height: 80%;
+    }
+
+    #button {
+      font-family: 'Merienda', cursive;
+      font-size: 15pt;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      box-shadow: 0 0 3px .5px rgb(18, 94, 65);
+      padding: 10px;
+      background-image: linear-gradient(to bottom, #00ffb3, #087a4e);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    #div1 {
+      display: none;
+      position: fixed;
+      text-align: center;
+      /* display: grid; */
+      place-items: center;
+      width: 80%;
+      height: 40%;
+    }
+
+    #div2 {
+      font-family: 'Merienda', cursive;
+      border-radius: 5px;
+      font-size: 15pt;
+      box-shadow: 0 0 3px .5px rgb(0, 0, 0);
+      padding: 25px 10px 25px 10px;
+      background-image: linear-gradient(#07bb85, #012717);
+    }
+  
+  </style>
+</head>
+
+<body>
+  
+  <div id="divPai">
+
+    <button id="button">
+      Abrir Janela
+    </button>
+
+    <div id="div1">
+      <div id="div2">
+        Tecle ESC para fechar
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>
+
+<!-- <body class="h-screen bg-purple-100 flex flex-col items-center justify-center">
+
+  <button id="openModal" class="bg-purple-700 text-white py-2 px-4 rounded">
+    Abrir Janela
+  </button>
+
+  <div class="modal-wrapper invisible fixed bg-gray-500 w-screen h-screen flex items-center justify-center">
+    <div class="p-8 bg-white text-center rounded">
+      Tecle ESC para fechar
+    </div>
+
+  </div>
+  
+</body> -->
